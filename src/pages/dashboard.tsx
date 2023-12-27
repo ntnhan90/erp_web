@@ -1,10 +1,11 @@
 import React from "react";
+import AdminLayout from "@layouts/layout";
 
 const Dashboard =() =>{
 	return(
-		<div>
+		<AdminLayout>
             Dashboard
-        </div>
+        </AdminLayout>
 	)
 }
 

@@ -36,7 +36,7 @@ export const newResource = <T>(
 	meta:{
 		current_page:page,
 		last_page: getLastPage(total, perPage),
-		from: page === 1 ? 1 : (page - 1) * perPage + 1;
+		from: page === 1 ? 1 : (page - 1) * perPage + 1,
 		to: getTo(total, page, perPage),
 		per_page: perPage, 
 		total

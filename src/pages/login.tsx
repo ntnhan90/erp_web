@@ -1,6 +1,6 @@
 import { SyntheticEvent, useState } from 'react'
 import Link from "next/link";
-import { userRouter } from "next/router";
+import { useRouter } from "next/router";
 import axios from "axios";
 
 
@@ -11,7 +11,6 @@ const Login = () =>{
 		e.preventDefault()
 		console.log("login")
 	}
-
 
 	return(
 		<div className="bg-light min-vh-100 d-flex flex-row align-items-center dark:bg-transparent">

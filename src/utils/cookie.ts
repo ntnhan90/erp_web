@@ -1,4 +1,4 @@
-import { CookieSerializeOptions, serialize } from " cookie";
+import { CookieSerializeOptions, serialize } from "cookie";
 
 export function serializeCookie( name:string, value: unknown, options?:CookieSerializeOptions){
 	const stringValue = typeof value === 'object' ? `j:${JSON.stringify(value)}` : String(value)
