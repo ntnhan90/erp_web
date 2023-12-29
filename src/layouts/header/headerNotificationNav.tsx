@@ -26,7 +26,7 @@ const HeaderNotificationNav = () =>{
 		<div className="nav">
 			<div className="nav-item">
 				<div className="dropdown">
-					<Link id="dropdown-notification" aria-expanded="false" role="button" className="hide-caret nav-link" tabindex="0" href="#">
+					<Link id="dropdown-notification" aria-expanded="false" role="button" className="hide-caret nav-link" tabIndex={0} href="#">
 						<FontAwesomeIcon icon={faBell} size="lg" />
 						
 					</Link>

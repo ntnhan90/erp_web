@@ -1,1 +1,0 @@
-export { serializeCookie } from './cookie';

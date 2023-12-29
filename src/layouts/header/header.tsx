@@ -16,13 +16,13 @@ const Header = (props:HeaderProps) =>{
 	return (
 		<header className="header sticky-top mb-4 py-2 px-sm-2 border-bottom">
 			<div className="container-fluid">
-				<button variant="link" type="button" 
+				<button  type="button" 
 					className="header-toggler d-md-none px-md-0 me-md-3 rounded-0 shadow-none btn btn-link"
 					onClick={toggleSidebar}
 				>
 					<FontAwesomeIcon icon={faBars} />
 				</button>
-				<button variant="link" type="button" 
+				<button type="button" 
 					className="header-toggler d-none d-md-inline-block px-md-0 me-md-3 rounded-0 shadow-none btn btn-link"
 					onClick={toggleSidebarMd}
 				>
