@@ -8,7 +8,7 @@ import React, { useState } from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 import {
-  PokemonModel,
+  Pokemon,
   PokemonEggGroup,
   pokemonEggGroups,
   PokemonType,
@@ -30,7 +30,7 @@ type Inputs = {
 }
 
 type Props = {
-  pokemon?: PokemonModel;
+  pokemon?: Pokemon;
 }
 
 export default function PokemonForm(props: Props) {
@@ -89,7 +89,7 @@ export default function PokemonForm(props: Props) {
     })
 
     const res = await fakeSubmit()
-
+    console.log(res);
     setSubmitting(false)
     window.scrollTo(0, 0)
 

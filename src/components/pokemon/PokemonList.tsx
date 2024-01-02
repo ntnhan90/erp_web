@@ -4,13 +4,12 @@ import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { PokemonModel } from '@models/pokemon';
+import { Pokemon } from '@models/pokemon';
 import THSort from '@components/tableSort/THSort';
 import PokemonTypeLabel from '@components/pokemon/PokemonTypeLabel'
 
-
 type Props = {
-  	pokemons: PokemonModel[];
+  	pokemons: Pokemon[];
 } & Pick<Parameters<typeof THSort>[0], 'setSort' | 'setOrder'>
 
 export default function PokemonList(props: Props) {

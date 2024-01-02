@@ -1,4 +1,4 @@
-export interface PokemonModel {
+export interface Pokemon {
   id: number;
   identifier: string;
   pokemondb_identifier: string;
