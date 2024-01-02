@@ -15,8 +15,8 @@ export default function THSort(props: Props) {
 	const router = useRouter();
 	const pathname = usePathname();
 	const searchParams = useSearchParams()
-  	const sort = searchParams.get('sort')
-  	const order = searchParams.get('order')
+  	const sort = searchParams?.get('sort')
+  	const order = searchParams?.get('order')
 
 	const onClick =() =>{
 		if(setOrder){
@@ -27,7 +27,7 @@ export default function THSort(props: Props) {
 			setSort(name);
 		}
 
-		const newSearchParams = new URLSearchParams(searchParams);
+		const newSearchParams = new URLSearchParams(searchParams?.toString());
 		newSearchParams.set('sort',name)
 		newSearchParams.set('order', order === 'asc' ? 'desc' : 'asc')
 

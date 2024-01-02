@@ -3,8 +3,8 @@ export interface PokemonModel {
   identifier: string;
   pokemondb_identifier: string;
   name: string;
-  types: string[];
-  egg_groups: string[];
+  types: PokemonType[];
+  egg_groups: PokemonEggGroup[];
   hp: number;
   attack: number;
   defense: number;

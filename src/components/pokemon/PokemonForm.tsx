@@ -8,7 +8,7 @@ import React, { useState } from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 import {
-  Pokemon,
+  PokemonModel,
   PokemonEggGroup,
   pokemonEggGroups,
   PokemonType,
@@ -30,7 +30,7 @@ type Inputs = {
 }
 
 type Props = {
-  pokemon?: Pokemon;
+  pokemon?: PokemonModel;
 }
 
 export default function PokemonForm(props: Props) {
