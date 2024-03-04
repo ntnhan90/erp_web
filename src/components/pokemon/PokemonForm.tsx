@@ -13,9 +13,9 @@ import {
   pokemonEggGroups,
   PokemonType,
   pokemonTypes,
-} from '@models/pokemon'
-import FormError from '@components/form/FormError'
-import PokemonTypeLabel from '@components/pokemon/PokemonTypeLabel'
+} from '@/models/pokemon'
+import FormError from '@/components/form/FormError'
+import PokemonTypeLabel from '@/components/pokemon/PokemonTypeLabel'
 
 type Inputs = {
   name: string;

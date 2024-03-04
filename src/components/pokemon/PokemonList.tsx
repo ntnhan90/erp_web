@@ -4,9 +4,9 @@ import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Pokemon } from '@models/pokemon';
-import THSort from '@components/tableSort/THSort';
-import PokemonTypeLabel from '@components/pokemon/PokemonTypeLabel'
+import { Pokemon } from '@/models/pokemon';
+import THSort from '@/components/tableSort/THSort';
+import PokemonTypeLabel from '@/components/pokemon/PokemonTypeLabel'
 
 type Props = {
   	pokemons: Pokemon[];
