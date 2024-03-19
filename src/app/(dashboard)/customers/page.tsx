@@ -1,5 +1,4 @@
 import { Card, CardBody, Col, Row } from "react-bootstrap";
-import Register from "./register";
 
 export default function Page(){
     return(
@@ -9,7 +8,6 @@ export default function Page(){
                     <CardBody className="p-4">
                         <h1>Register</h1>
                         <p className="text-black-50"> Create your account</p>
-                        <Register />
                     </CardBody>            
                 </Card>
             </Col>

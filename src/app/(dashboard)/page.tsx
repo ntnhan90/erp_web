@@ -236,7 +236,7 @@ export default function Page(){
                 </div>                            
             </div>                                           
 
-            <div className="row">
+            <div className="row mt-3">
                 <div className="col-md-12">
                     <Card>
                         <CardHeader>
