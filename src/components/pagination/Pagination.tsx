@@ -1,30 +1,30 @@
-import React from 'react';
-import { Resource } from '@/models/resource';
-import Summary from './Summary';
-import RowsPerPage from './RowsPerPage';
-import Paginate from './Paginate';
-
+import React from 'react'
+import { ResourceCollection } from '@/models/resource'
+import Paginate from './Paginate'
+import RowsPerPage from '@/components/pagination/RowsPerPage'
+import Summary from '@/components/pagination/Summary'
 
 type Props = {
-  meta: Resource<unknown>['meta'];
-  setPerPage?: (perPage: number) => void;
-} & Pick<Parameters<typeof Paginate>[0], 'setPage'>
-& Pick<Parameters<typeof RowsPerPage>[0], 'setPerPage'>
+  meta: ResourceCollection<unknown>['meta'];
+}
 
-export default function Pagination(props: Props){
-	const {
-		meta: {
-			from, to, total, per_page: perPage, last_page: lastPage, current_page: currentPage,
-		},
-		setPerPage,
-		setPage,
-	} = props
+export default function Pagination(props: Props) {
+  const {
+    meta: {
+      from,
+      to,
+      total,
+      per_page: perPage,
+      last_page: lastPage,
+      current_page: currentPage,
+    },
+  } = props
 
-	return (
-		<div className="row align-items-center justify-content-center">
-			<Summary from={from} to={to}  total={total}/>
-			<RowsPerPage  perPage={perPage} setPerPage={setPerPage}/>
-			<Paginate currentPage={currentPage} lastPage={lastPage} setPage={setPage} />
-		</div>
-	)
+  return (
+    <div className="row align-items-center justify-content-center">
+      <Summary from={from} to={to} total={total} />
+      <RowsPerPage perPage={perPage} />
+      <Paginate currentPage={currentPage} lastPage={lastPage} />
+    </div>
+  )
 }

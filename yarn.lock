@@ -337,11 +337,6 @@
   dependencies:
     undici-types "~5.26.4"
 
-"@types/nprogress@^0.2.0":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@types/nprogress/-/nprogress-0.2.3.tgz#b2150b054a13622fabcba12cf6f0b54c48b14287"
-  integrity sha512-k7kRA033QNtC+gLc4VPlfnue58CM1iQLgn1IMAU8VPHGOj7oIHPp9UlhedEnD/Gl8evoCjwkZjlBORtZ3JByUA==
-
 "@types/prop-types@*":
   version "15.7.11"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.11.tgz#2596fb352ee96a1379c657734d4b913a613ad563"
@@ -1964,6 +1959,13 @@ next-i18next@^15.3.0:
     hoist-non-react-statics "^3.3.2"
     i18next-fs-backend "^2.3.1"
 
+next-nprogress-bar@^2.3.12:
+  version "2.3.12"
+  resolved "https://registry.yarnpkg.com/next-nprogress-bar/-/next-nprogress-bar-2.3.12.tgz#ecc8426946d7635cfb60e22b2dc71d8b6d91a6b4"
+  integrity sha512-BCsmNmssPY4QfYKux7cGYm/JmsM/n9TGMJJDyYPt7ckWyK8l43hMgi7g9d7u/IxCaEAx3pbzfg7Ity0zdlDnGA==
+  dependencies:
+    nprogress "^0.2.0"
+
 next-sitemap@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-4.2.3.tgz#5db3f650351a51e84b9fd6b58c5af2f9257b5058"
@@ -1996,22 +1998,6 @@ next@14.2.3:
     "@next/swc-win32-arm64-msvc" "14.2.3"
     "@next/swc-win32-ia32-msvc" "14.2.3"
     "@next/swc-win32-x64-msvc" "14.2.3"
-
-nextjs-progressbar@^0.0.16:
-  version "0.0.16"
-  resolved "https://registry.yarnpkg.com/nextjs-progressbar/-/nextjs-progressbar-0.0.16.tgz#d2c1e54ffc2c6d52b64282c0d764a44241fbc36e"
-  integrity sha512-GV0fD38EMD3vSDCmkq+tObmoup6QA91a6a9MxGuhJZuRk/9TNsrHGnIQQQ/sggkMkXuT4fBgF6jRjFwScDT3zA==
-  dependencies:
-    "@types/nprogress" "^0.2.0"
-    nprogress "^0.2.0"
-    prop-types "^15.8.1"
-
-nextjs-progressloader@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/nextjs-progressloader/-/nextjs-progressloader-1.2.0.tgz#dcf39f5b6fe4cbb2011206aea1a138df40523032"
-  integrity sha512-S2gD7nmb0smFaDjI48n+CHkCRoyi9GjqLDmndyHHvTyUXfDsHnmJWruYaPuusZi3Gdryz+2cd/Xjduh8x8KCLA==
-  dependencies:
-    nprogress "^0.2.0"
 
 normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
