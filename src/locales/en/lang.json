@@ -187,8 +187,8 @@
       "items": {
         "new_user": "New user registered",
         "deleted_user": "User deleted",
-        "sales_report": "Sales report is ready",
-        "new_client": "New client",
+        "sales_report": "Sales report ",
+        "new_order": "New order",
         "server_overloaded": "Server overloaded"
       },
       "server": {

@@ -188,7 +188,7 @@
         "new_user": "新しいユーザーが登録されました",
         "deleted_user": "ユーザーが削除されました",
         "sales_report": "販売レポートが準備できました",
-        "new_client": "新しいクライアント",
+        "new_order": "新しいクライアント",
         "server_overloaded": "サーバーが過負荷です"
       },
       "server": {
