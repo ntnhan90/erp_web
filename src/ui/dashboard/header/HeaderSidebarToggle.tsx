@@ -1,26 +1,25 @@
 'use client'
 
-import { useContext } from "react"
-import { SidebarContext } from "../sidebar-provider"
+import { useSidebar } from "../SidebarProvider"
 import { Button } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 export default function HeaderSidebarToggler(){
     const {
-        showSidebarState: [isShowSidebar, setIsShowSidebar],
-        showSidebarMdState: [isShowSidebarMd, setIsShowSidebarMd],
-    } = useContext(SidebarContext);
+        showSidebarState : [isShowSidebar, setIsShowSidebar],
+        showSidebarMdState: [isShowSidebarMd, setIsShowSidebarMd]
+    } = useSidebar()
 
-    const toggleSidebar = () =>{
+    const toggleSidebar = () => {
         setIsShowSidebar(!isShowSidebar)
     }
 
-    const toggleSidebarMd = () =>{
+    const toggleSidebarMd = () => {
         setIsShowSidebarMd(!isShowSidebarMd)
     }
 
-    return (
+    return(
         <>
             <Button
                 variant="link"
@@ -28,7 +27,7 @@ export default function HeaderSidebarToggler(){
                 type="button"
                 onClick={toggleSidebar}
             >
-                <FontAwesomeIcon icon={faBars}/>
+                <FontAwesomeIcon icon={faBars} />
             </Button>
             <Button
                 variant="link"
