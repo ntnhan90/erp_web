@@ -8,7 +8,7 @@ export default function Page(){
                 <Card className="mb-4 rounded-0">
                     <CardBody className="p-4">
                         <h1>Register</h1>
-                        <p className="text-black-50"> Create your account</p>
+                        <p className=" text-black-50 dark:text-gray-500"> Create your account</p>
                         <Register />
                     </CardBody>            
                 </Card>

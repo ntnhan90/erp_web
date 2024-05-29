@@ -17,6 +17,9 @@ export const SidebarContext = createContext<SidebarContextType>({
 export default function SidebarProvider({children}:{
     children: React.ReactNode;
 }) {
+
+
+    
     const [isShowSidebar, setIsShowSidebar ] = useState(false)
     const [isShowSidebarMd, setIsShowSidebarMd ] = useState(true)
 

@@ -16,7 +16,7 @@ export default async function RootLayout({
     const dictionary = await getDictionary();
     return (
         <html lang="en" data-bs-theme={getTheme()}>
-            <body>
+            <body cz-shortcut-listen="true">
                 <ProgressBar />
                 <DictionaryProvider dictionary={dictionary}>
                     {children}

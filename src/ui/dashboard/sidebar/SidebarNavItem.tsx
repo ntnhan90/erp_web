@@ -31,6 +31,7 @@ export default function SidebarNavItem( props: Props){
                     {icon ? <FontAwesomeIcon className="nav-icon ms-n3" icon={icon}/>
                         : <span className="nav-icon ms-n3"/>
                     }
+                    {children}
                 </NavLink>
             </Link>
         </NavItem>

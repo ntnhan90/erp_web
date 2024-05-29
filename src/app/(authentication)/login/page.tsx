@@ -1,16 +1,19 @@
 import { Col, Row } from "react-bootstrap";
 import Link from "next/link";
 import LoginForm from "./login";
+import { getDictionary } from "@/locales/dictionary";
 
-export default function Page(){
+export default async function Page(){
+    const dict = await getDictionary();
+
     return(
         <Row className="justify-content-center align-items-center px-3">
             <Col lg={8}>
                 <Row>
-                <Col md={7} className="bg-white border p-5">
+                <Col md={7} className="bg-white dark:bg-dark border p-5">
                     <div>
-                        <h1>Login</h1>
-                        <p className="text-black-50">Sign In to your account</p>
+                        <h1>{dict.login.title}</h1>
+                        <p className="text-black-50 dark:text-gray-500">Sign In to your account</p>
                         <LoginForm />
                     </div>
                 </Col>

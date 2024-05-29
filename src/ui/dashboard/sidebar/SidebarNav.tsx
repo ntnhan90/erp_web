@@ -33,12 +33,11 @@ import {
     return (
       <ul className="list-unstyled">
         <SidebarNavItem icon={faGauge} href="/">
-           12
-          <small className="ms-auto"><Badge bg="info" className="ms-auto">NEW</Badge></small>
+			{dict.sidebar.items.dashboard}
+         	<small className="ms-auto"><Badge bg="info" className="ms-auto">NEW</Badge></small>
         </SidebarNavItem>
         <SidebarNavItem icon={faCode} href="/pokemons">
           {dict.sidebar.items.sample}
-          <small className="ms-auto"><Badge bg="danger" className="ms-auto">DEMO</Badge></small>
         </SidebarNavItem>
         <SidebarNavTitle>{dict.sidebar.items.theme}</SidebarNavTitle>
         <SidebarNavItem icon={faDroplet} href="#">{dict.sidebar.items.colors}</SidebarNavItem>

@@ -18,7 +18,7 @@ export default function Layout({
             <Sidebar>
                 <SidebarNav />
             </Sidebar>
-            <div className="wrapper d-flex flex-column min-vh-100 bg-light">
+            <div className="wrapper d-flex flex-column min-vh-100">
                 <Header /> 
                 <div className="body flex-grow-1 px-sm-2 mb-4">
                     <Container fluid="lg">
