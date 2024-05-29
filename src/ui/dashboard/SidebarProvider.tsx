@@ -18,7 +18,7 @@ export default function SidebarProvider({children}:{
     children: React.ReactNode;
 }) {
     const [isShowSidebar, setIsShowSidebar ] = useState(false)
-    const [isShowSidebarMd, setIsShowSidebarMd ] = useState(false)
+    const [isShowSidebarMd, setIsShowSidebarMd ] = useState(true)
 
     const value: SidebarContextType = useMemo(() =>({
         showSidebarState:  [isShowSidebar, setIsShowSidebar],
