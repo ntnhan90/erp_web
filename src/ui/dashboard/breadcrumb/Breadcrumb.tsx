@@ -8,13 +8,13 @@ export default async function  Breadcrumb() {
     return(
         <BSBreadcrumb listProps={{ className:'mb-0 align-items-center'}}>
             <BreadcrumbItem
-                linkProps={{ classNames: 'text-decoration-none' }}
+                linkProps={{ className: 'text-decoration-none' }}
                 href="/"
             >
                 {dict.breadcrumb.home}
             </BreadcrumbItem>
             <BreadcrumbItem
-                linkProps={{ classNames: 'text-decoration-none' }}
+                linkProps={{ className: 'text-decoration-none' }}
                 href="/"
             >
                 {dict.breadcrumb.library}

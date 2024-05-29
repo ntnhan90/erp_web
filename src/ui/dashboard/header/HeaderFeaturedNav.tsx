@@ -4,7 +4,6 @@ import { getDictionary } from "@/locales/dictionary";
 
 export default async function HeaderFeaturedNav(){
     const dict = await getDictionary();
-    console.log(dict);
     return(
         <Nav>
             <NavItem>
